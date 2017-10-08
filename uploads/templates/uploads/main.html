@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('uploads.static', filename='uploads/styles.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <div id="dropzone">
+                Drop files here!
+            </div>
+            <button id="upload">Upload files</button>
+            <div id="filelist"></div>
+
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+            <script src="{{ url_for('uploads.static', filename='uploads/main.js') }}"></script>
+        </div>
+    </body>
+</html>

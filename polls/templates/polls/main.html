@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('polls.static', filename='polls/styles.css') }}">
+    </head>
+    <body>
+        <h1 id="question">Python Poll</h1>
+        <h2>Vote at <a href="{{ vote_url }}" target="_blank">{{ vote_url }}</a></h2>
+        <div id="charts">
+            <div>
+                <h3>Python Experience (<span id="s1">0</span>)</h3>
+                <canvas id="q1"></canvas>
+            </div>
+            <div>
+                <h3>Python Versions (<span id="s2">0</span>)</h3>
+                <canvas id="q2"></canvas>
+            </div>
+            <div>
+                <h3>Web Frameworks (<span id="s3">0</span>)</h3>
+                <canvas id="q3"></canvas>
+            </div>
+            <div>
+                <h3>Programming Languages (<span id="s4">0</span>)</h3>
+                <canvas id="q4"></canvas>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+        <script src="{{ url_for('polls.static', filename='polls/main.js') }}"></script>
+    </body>
+</html>

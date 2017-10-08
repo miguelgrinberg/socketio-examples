@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('chat.static', filename='chat/styles.css') }}">
+    </head>
+    <body>
+        <h1>Socket.IO Chat</h1>
+        <h2>Join the chat at <a href="{{ chat_url }}">{{ chat_url }}</a></h2>
+        <div id="chat">
+        </div>
+        <div id="message-panel">
+            <hr>
+            <p>
+                Type your message below. Press ENTER to submit.<br>
+                <input type="text" id="message">
+            </p>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+        <script src="{{ url_for('chat.static', filename='chat/main.js') }}"></script>
+    </body>
+</html>

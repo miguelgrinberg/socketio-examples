@@ -1,0 +1,25 @@
+html, body {
+    margin: 0 auto;
+    height: 100%;
+}
+#heading {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    z-index: 10000;
+}
+#heading div {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #aaa;
+    opacity: 0.75;
+}
+h1, h2 {
+    margin: 0 auto;
+}
+
+#map {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}

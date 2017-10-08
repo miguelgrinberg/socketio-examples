@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 120%;
+}
+
+#chat {
+    height: calc(100% - 300px);
+    padding: 10px;
+    line-height: 1em;
+    overflow-y: scroll; 
+}
+
+#chat p {
+    margin: 5px 0px;
+}
+
+#chat p .user {
+    color: #22f;
+}
+
+#chat p .control-message {
+    font-style: italic;
+    color: #888;
+}
+
+#message-panel {
+    margin: 10px;
+    padding: 0;
+    position: absolute;
+    bottom: 0px;
+    width: 95%;
+}
+
+#message {
+    margin-top: 10px;
+    width: 95%;
+    font-size: 100%;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('polls.static', filename='polls/styles.css') }}">
+    </head>
+    <body>
+        <h1>Years of Python experience?</h1>
+        <div class="poll">
+            <div id="q11" class="q1 choice"><p>0-2 years</p></div>
+            <div id="q12" class="q1 choice"><p>2-4 years</p></div>
+            <div id="q13" class="q1 choice"><p>4+ years</p></div>
+        </div>
+        <h1>What version of Python do you use daily?</h1>
+        <div class="poll">
+            <div id="q21" class="q2 choice"><p>Python 2</p></div>
+            <div id="q22" class="q2 choice"><p>Python 3</p></div>
+            <div id="q23" class="q2 choice"><p>Both</p></div>
+            <div id="q24" class="q2 choice"><p>Neither</p></div>
+        </div>
+        <h1>Favorite Python web framework?</h1>
+        <div class="poll">
+            <div id="q31" class="q3 choice"><p>Django</p></div>
+            <div id="q32" class="q3 choice"><p>Flask</p></div>
+            <div id="q33" class="q3 choice"><p>Other</p></div>
+        </div>
+        <h1>Favorite programming language besides Python?</h1>
+        <div class="poll">
+            <div id="q41" class="q4 choice"><p>JavaScript</p></div>
+            <div id="q42" class="q4 choice"><p>C/C++</p></div>
+            <div id="q43" class="q4 choice"><p>Ruby</p></div>
+            <div id="q44" class="q4 choice"><p>Go</p></div>
+            <div id="q45" class="q4 choice"><p>Other</p></div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+        <script src="{{ url_for('polls.static', filename='polls/vote.js') }}"></script>
+    </body>
+</html>

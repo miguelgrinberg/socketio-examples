@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="{{ url_for('audio.static', filename='audio/styles.css') }}">
+    </head>
+    <body>
+        <div id="viz">
+            <canvas id="analyser" width="1024" height="500"></canvas>
+            <div id="wavedisplay">
+                <div id="wavefiles">
+                </div>
+            </div>
+        </div>
+        <div id="controls">
+            <img id="record" src="{{ url_for('audio.static', filename='audio/mic128.png') }}" onclick="toggleRecording(this);">
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.slim.js"></script>
+        <script src="{{ url_for('audio.static', filename='audio/main.js') }}"></script>
+    </body>
+</html>

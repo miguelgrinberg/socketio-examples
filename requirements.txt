@@ -1,0 +1,13 @@
+click==6.7
+enum-compat==0.0.2
+eventlet==0.21.0
+Flask==0.12.2
+Flask-SocketIO==2.9.2
+greenlet==0.4.12
+itsdangerous==0.24
+Jinja2==2.9.6
+MarkupSafe==1.0
+python-engineio==1.7.0
+python-socketio==1.8.1
+six==1.11.0
+Werkzeug==0.12.2
